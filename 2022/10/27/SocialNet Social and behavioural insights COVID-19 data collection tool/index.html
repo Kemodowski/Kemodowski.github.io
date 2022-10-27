@@ -1,0 +1,779 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>洞察数据收集工具——以新冠肺炎下社会行为为例 | 科莫多夫斯基</title><meta name="author" content="科莫多夫斯基"><meta name="copyright" content="科莫多夫斯基"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="及时的数据能对人们不断变化的文化、态度和行为做出准确的判断。可以确保对COVID-19的反应是有针对性的，并适应人口的需求。该篇介绍了一个数据收集工具，从而可以帮助国家（地区）在应对该大流行病时做出相应的政策。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="洞察数据收集工具——以新冠肺炎下社会行为为例">
+<meta property="og:url" content="https://kemodowski.fun/2022/10/27/SocialNet%20Social%20and%20behavioural%20insights%20COVID-19%20data%20collection%20tool/index.html">
+<meta property="og:site_name" content="科莫多夫斯基">
+<meta property="og:description" content="及时的数据能对人们不断变化的文化、态度和行为做出准确的判断。可以确保对COVID-19的反应是有针对性的，并适应人口的需求。该篇介绍了一个数据收集工具，从而可以帮助国家（地区）在应对该大流行病时做出相应的政策。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2022/10/27/rdN48g5DUtE6wSW.png">
+<meta property="article:published_time" content="2022-10-27T05:29:08.000Z">
+<meta property="article:modified_time" content="2022-10-27T11:15:36.483Z">
+<meta property="article:author" content="科莫多夫斯基">
+<meta property="article:tag" content="统计">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/10/27/rdN48g5DUtE6wSW.png"><link rel="shortcut icon" href="https://s2.loli.net/2022/10/25/nGU1KtAw9a4S2Bx.jpg"><link rel="canonical" href="https://kemodowski.fun/2022/10/27/SocialNet%20Social%20and%20behavioural%20insights%20COVID-19%20data%20collection%20tool/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":500},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 科莫多夫斯基","link":"链接: ","source":"来源: 科莫多夫斯基","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '洞察数据收集工具——以新冠肺炎下社会行为为例',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-10-27 19:15:36'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/xxx.css"><meta name="generator" content="Hexo 6.3.0"></head><body><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js/themes/blue/pace-theme-minimal.min.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2022/10/25/nGU1KtAw9a4S2Bx.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 档案馆</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2022/10/27/rdN48g5DUtE6wSW.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">科莫多夫斯基</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 档案馆</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">洞察数据收集工具——以新冠肺炎下社会行为为例</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-10-27T05:29:08.000Z" title="发表于 2022-10-27 13:29:08">2022-10-27</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-10-27T11:15:36.483Z" title="更新于 2022-10-27 19:15:36">2022-10-27</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%8C%BB%E5%AD%A6/">医学</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">9.5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>27分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="洞察数据收集工具——以新冠肺炎下社会行为为例"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="序"><a href="#序" class="headerlink" title="序"></a>序</h1><blockquote>
+<p>2020年1月，COVID-19的暴发被定性为一种大流行病。虽然一些卫生部门意识到可以使用社会行为数据来协助生物医学工作，但许多国家并没有一个强大的系统来收集社会和行为数据，以告知当地的应对团队设计政策。</p>
+</blockquote>
+<p>在COVID-19暴发的背景下，社会行为数据的目的是更好的获得不同的人在新冠肺炎下做出的行为方式，并对这些方式做出相应的见解。从而可以大致了解部分人的行为障碍和驱动因素，以便为接下来的政策规划提供信息。</p>
+<p>当然，<strong>公共卫生突发事件的有效反应</strong>是需要社会行为数据来为社区层面的国家战略提供信息——是对流行病学数据和生物医学数据等证据的补充。</p>
+<p>社会行为数据在识别和理解可能阻碍社会和行为的障碍方面发挥了重要的作用。<br>在了解可能阻碍对措施的社会和行为障碍或可用于保护人们安全的推动因素方面发挥着重要作用。</p>
+<p>简单地说，人们做什么或不做什么都有可能直接影响到疫情的控制。在COVID-19大流行病中，人们的行为——愿意遵守公共卫生社会措施仍然是阻止病毒传播的有力武器。</p>
+<blockquote>
+<p>我们需要在行为科学方面进行创新，研究我们如何在社区和个人中开展工作：</p>
+<ul>
+<li>了解流行病和在流行病中的行为</li>
+<li>处理信息和建议</li>
+<li>建立信任<br>…这就像建造疫苗一样科学。<br>——迈克-瑞恩博士  （ 世卫组织卫生应急计划执行主任 ）</li>
+</ul>
+</blockquote>
+<p><strong>在像COVID-19这样快速演变的大流行病中，对社会行为洞察数据应该定期收集</strong></p>
+<p>即使在像COVID-19这样严重的疫情爆发期间情况发生了变化，行为洞察数据会对人们的行为、想法甚至是信仰做收集，这便有助于为应对措施提供信息。这些信息还可以帮助人们解决对基本预防措施的偏见和障碍，以上。</p>
+<p><strong>行为科学数据可以帮助我们了解行为上的障碍以及行为的驱动因素</strong></p>
+<ul>
+<li>一旦知道了这些障碍，就可以更容易地解决它们。</li>
+<li>一旦知道了驱动因素，就可以利用它们来鼓励人们做出正确的行为。</li>
+</ul>
+<p><strong>SBl 工具具有以下特点：</strong><br>标准化：允许在各国之间进行比较</p>
+<p>灵活：使研究人员能够在不同的环境下找到对应的方法</p>
+<p>最相关的变量：</p>
+<ul>
+<li>广泛的变量菜单可供选择</li>
+<li>定量和定性的数据收集部分</li>
+<li>适应非洲地区的情况</li>
+</ul>
+<p>在紧急情况，社会行为数据的收集和使用是很有价值的，因为此工具将注意力集中在人们和他们的实际需求上。应对小组应将其与流行病学的数据一起使用。</p>
+<p>SBl 工具包括一个定量调查，以采集社会和行为数据，然后是一个定性研究部分，以深入研究与当地应对团队最切合的主题。<br>SBl工具特意具有灵活性，可以根据当地的情况进行调整。<br>SBl工具在尼日利亚和赞比亚进行了试点，从试点中获得的经验来看，是对实施者来说有益的。</p>
+<h1 id="筹备阶段"><a href="#筹备阶段" class="headerlink" title="筹备阶段"></a>筹备阶段</h1><p>任何需要在一个国家或地区实施的项目都应力求在三个方面取得平衡：</p>
+<ul>
+<li>人</li>
+<li>规划</li>
+<li>流程</li>
+</ul>
+<p>人员、流程和计划是如何结合在一起的，以最大限度地使用少量时间收集更多的数据并将其反馈给反应小组。</p>
+<h2 id="人员"><a href="#人员" class="headerlink" title="人员"></a>人员</h2><ul>
+<li>项目小组</li>
+<li>响应团队</li>
+<li>其他相关部门</li>
+<li>实施伙伴</li>
+</ul>
+<h3 id="项目小组"><a href="#项目小组" class="headerlink" title="项目小组"></a>项目小组</h3><p>这是负责规划和执行项目日常活动的核心团队。</p>
+<ul>
+<li>负责项目的执行</li>
+<li>负责管理项目资源</li>
+<li>负责分配项目的资源</li>
+</ul>
+<p>如果SBl工具是由大学、非政府组织、卫生部或WHO办公室实施的，项目小组很可能由这些组织的成员组成。</p>
+<h3 id="响应团队和当地的有关部门"><a href="#响应团队和当地的有关部门" class="headerlink" title="响应团队和当地的有关部门"></a>响应团队和当地的有关部门</h3><p>（在某些情况下，可能被称为事件管理支持小组 IMST 或 “反应支柱”。）</p>
+<p>当地的团队（常由卫生部官员组成或者由世卫组织和其他国际机构及合作伙伴所支持）：负责指导国家的行动以应对大流行病。<br>其他相关利益方（常由国际组织、非政府组织、当地非政府组织、代表社区的公民社会团体、学术界和卫生部中不直接作为应对小组成员组成。这类有关部门经常围绕具体问题与应对小组互动，或者参加其他工作。</p>
+<p>多样化的项目是团队理想的，因为这样的团队会拥有多样化的技能、资源和知识。</p>
+<p>举个例子<br>尼日利亚和赞比亚试行SBl工具时，项目团队包括：</p>
+<ul>
+<li>世卫组织国家办事处（包括来自风险交流小组和社区参与小组的代表）</li>
+<li>世卫组织区域办事处（带来在非洲开展社会科学研究的经验）</li>
+<li>世卫组织行为洞察力和科学股；以及BBC媒体行动（执行伙伴）</li>
+</ul>
+<p>试点项目得益于其多学科团队的以下技能：</p>
+<ul>
+<li>混合方法研究技能</li>
+<li>对国家和文化的了解（包括当前的文化、信仰和神话）</li>
+<li>项目管理技能</li>
+<li>与当地应对小组和任何其他当地部门（如卫生部）</li>
+</ul>
+<h4 id="沟通（关键）"><a href="#沟通（关键）" class="headerlink" title="沟通（关键）"></a>沟通（关键）</h4><p>在任何社会和行为项目中，都可能有多个有关部门和合作伙伴群体参与。因此，在不同的团队之间建立一个清晰有效的沟通结构，确保团队保持凝聚力。</p>
+<p>建立一个清晰和有效的沟通架构</p>
+<ul>
+<li>安排定期会议，每周或每两周一次 这取决于项目的阶段。</li>
+<li>建立一个强大的邮件系统定期更新（提出问题、分享会议记录等）。根据需要，用其余的时间来补充讨论。</li>
+<li>在相关团队中确定协调人。协调中心可以集中和传递信息，从而将信息丢失、重复或误解的风险降至最低。 ( 重要 )</li>
+</ul>
+<p>在整个项目过程中，应让当地有关部门了解情况并参与其中，以确保项目与当地应对小组的需求相一致。</p>
+<h4 id="对现有数据的评估"><a href="#对现有数据的评估" class="headerlink" title="对现有数据的评估"></a>对现有数据的评估</h4><p>项目组首先要进行的活动之一是对在该国家或地区已经收集的社会和行为数据进行评估，措施如下：</p>
+<ul>
+<li>了解该地区已经进行的（或未来计划进行的）地方投资</li>
+<li>核实数据是否可用或相关。避免研究工作的重复</li>
+<li>吸收任何经验教训</li>
+<li>了解该地区现有研究或收集数据能力的团体。</li>
+</ul>
+<h4 id="预检的方式"><a href="#预检的方式" class="headerlink" title="预检的方式"></a>预检的方式</h4><ul>
+<li>询问世卫组织或卫生部（特别是从事社会科学研究的团队）是否知道正在收集的数据，询问学术界、私营部门或其他组织已经有数据。</li>
+<li>在网上快速搜索可用的文献。</li>
+<li>检查可信的应急网站，如GOARN和集体服务的工具。</li>
+</ul>
+<h2 id="实施伙伴"><a href="#实施伙伴" class="headerlink" title="实施伙伴"></a>实施伙伴</h2><p>以下标准可以帮助选择首选执行伙伴:</p>
+<ul>
+<li>具有在国家或地区开展类似项目的经验，或与地方当局和当地知名团队有关系。</li>
+<li>当地的语言</li>
+<li>资金</li>
+<li>提供关键资源的能力（例如：调查软件或潜在受访者的数据库）</li>
+<li>能否完成工作</li>
+</ul>
+<p>假如您正在寻找一个支持在非洲国家使用SBl工具的实施伙伴，您有三家公司正在考虑中：</p>
+<table>
+<thead>
+<tr>
+<th>基本标准</th>
+<th>公司A</th>
+<th>公司B</th>
+<th>公司C</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>以当地为基础的团队，了解当地文化和规范</td>
+<td>√</td>
+<td>×</td>
+<td>√</td>
+</tr>
+<tr>
+<td>是否有项目经验</td>
+<td>√</td>
+<td>×</td>
+<td>√</td>
+</tr>
+<tr>
+<td>成本</td>
+<td>一些</td>
+<td>高</td>
+<td>低</td>
+</tr>
+<tr>
+<td>带来了在卫生部门收集社会和行为数据的相关经验</td>
+<td>×</td>
+<td>√</td>
+<td>√</td>
+</tr>
+</tbody></table>
+<p>与A和B公司相比，C公司的各项标准都很好。根据他们的建议，他们有很强的社会和行为科学经验，最后，成本是三个机构中最低的，这意味着C公司是最佳选择。</p>
+<h3 id="语境化"><a href="#语境化" class="headerlink" title="语境化"></a>语境化</h3><p>在不同的国家，人们的信仰不同，因为他们的文化、经验和环境不同。宗教和语言等因素影响行为和思维方面发挥着重要作用。因此，为了了解人们行为的各种促进因素和障碍，你需要了解他们的文化和现有规范。如果不充分注意文化差异，可能会危及调查结果的效力和有效性，并使受访者产生隔阂。</p>
+<h4 id="语言和翻译"><a href="#语言和翻译" class="headerlink" title="语言和翻译"></a>语言和翻译</h4><p>适应SBI TOOL的指导原则</p>
+<ul>
+<li><p>通过回答以下问题来调整和修改针对国家的协议</p>
+</li>
+<li><p>以结构化和有数据依据的方式，对问题进行调整和修改</p>
+</li>
+<li><p>核心调查表是否涵盖了与当地应对小组相关的主题？</p>
+</li>
+<li><p>项目组将如何确定问卷的哪些模块将被使用？(这个决定应该是基于证据的，而不是基于项目组的假设）。</p>
+</li>
+<li><p>是否有不相关的问题可以省略（较短的调查问卷总是更好的）</p>
+</li>
+<li><p>研究中包括哪些地理区域？</p>
+</li>
+</ul>
+<h3 id="团队参与策略"><a href="#团队参与策略" class="headerlink" title="团队参与策略"></a>团队参与策略</h3><ul>
+<li>举行初步情况介绍会，介绍项目情况</li>
+<li>确定定期与关键有关部门接触</li>
+<li>与当地反应小组合作做出关键决定</li>
+</ul>
+<h4 id="有关部门管理的好处"><a href="#有关部门管理的好处" class="headerlink" title="有关部门管理的好处"></a>有关部门管理的好处</h4><ul>
+<li>更好地设计研究（受益于现有的研究和专业知识）。</li>
+<li>研究数据与当地反应小组的需求相一致，从而能够做出基于现实的决定</li>
+<li>对反应小组收集的数据有更大的使用权和所有权</li>
+</ul>
+<h4 id="伦理批准"><a href="#伦理批准" class="headerlink" title="伦理批准"></a>伦理批准</h4><p>（在启动该领域的研究之前，从指定的组织获得伦理批准是研究过程中的一个重要部分。伦理标准可以促进和确保对所有人类受试者的尊重，并保护他们的健康和权利）</p>
+<ul>
+<li>获得伦理批准增加了项目的合法性，因为它已被评估为保护人类主体的全球伦理标准。</li>
+<li>伦理批准的过程需要提交协议、调查问卷、同意书和所有其他辅助文件提交给当地&#x2F;国家伦理委员会。这确保了研究的整个范围和性质都能得到检查。</li>
+<li>伦理批准也使研究人员能够在科学杂志上分享研究结果。</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://www.wma.net/policies-post/wma-declaration-of-helsinki-ethical-principles-for-medical-research-involving-human-subjects/">世界医学协会赫尔辛基宣言（1964年）</a></p>
+<p><a target="_blank" rel="noopener" href="https://cdn-auth-cms.who.int/media/docs/default-source/ethics/international-ethical-guidelines-for-health-related-research-involving-humans.pdf?sfvrsn=f62ee074_0">涉及人的生物医学研究的国际伦理准则（CIOMS 2016）</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.who.int/groups/research-ethics-review-committee">研究伦理审查委员会(ERC)</a></p>
+<h4 id="调查问卷"><a href="#调查问卷" class="headerlink" title="调查问卷"></a>调查问卷</h4><p>调查问卷（应该已经根据当地情况进行了调整）的目的是为了确保问题清晰&#x2F;相关并且能够提供对应的见解。只有这样，调查才能从参与者那里得到公平的回答。</p>
+<p>测试应该在不同的人口群体中进行</p>
+<ul>
+<li>有助于确保问题的可理解性 （如果受访者不理解这些问题或感到困惑，那么获得的见解将是有限的，甚至可能促使受访者朝着错误的方向回答问题）</li>
+<li>有助于识别文化上的陷阱：调查可以确定被认为是禁忌的问题，人们不会回答。</li>
+<li>指导分析和研究的结果 </li>
+<li>测试有助于确保项目组收集正确性以满足研究目的和目标。</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
+<li>一个结构化的沟通可以确保每个合作伙伴和有关部门拥有充裕的时间和专业知识得到最佳利用。</li>
+<li>项目组首先进行的活动之一是在国家或地区已经收集的数据进行评估。</li>
+<li>如果项目组不具备所需的所有技能，聘请一个执行伙伴有助于为项目带来额外的专业知识。</li>
+<li>研究必须解决有关部门的需求和问题。因此，在项目开始时和其他关键决策点让有关部门参与进来很重要。</li>
+</ul>
+<h1 id="准备和开展实地调查"><a href="#准备和开展实地调查" class="headerlink" title="准备和开展实地调查"></a>准备和开展实地调查</h1><p>（实地工作中具有灵活性）<br>虽然我们将关注实地工作阶段，但重要的是整个SBI工具调查过程是一个灵活的过程，有一系列的反馈循环，而不是一系列的线性步骤。反馈循环区域是默认的，也是过程的重要组成部分，不断地反馈信息，告诉我们哪些是有效的，哪些是无效的。</p>
+<p><strong>为什么有必要进行迭代？</strong><br>考虑到大流行的情况和不断变化的环境，反馈环将帮助你调整活动，以便你能获得与负责管理COVID-19的当地反应团队相关和有用的数据。<br>同样重要的是，作为工具的使用者，你要能够对不断变化的条件适应。</p>
+<h2 id="抽样策略"><a href="#抽样策略" class="headerlink" title="抽样策略"></a>抽样策略</h2><p>数据的相关性将取决于调查所选择的样本。只有确定了正确的样本，数据才能准确地反映大多数人的情况。</p>
+<h3 id="样本"><a href="#样本" class="headerlink" title="样本"></a>样本</h3><p><strong>通常如何定义样本？</strong><br>样本是包括在实地工作中的人的数量和特征抽样策略选择的。虽然有不同类型的抽样策略，但在使用本工具时，我们建议尽可能寻求有代表性的样本。</p>
+<p>采样策略：样本中的人口统计学分布（年龄、性别、州&#x2F;区）应与成年人口相一致。</p>
+<p><strong>什么会影响样本大小？</strong><br>有许多因素会影响样本的大小，包括：</p>
+<ul>
+<li>满足调查目标所需的信息</li>
+<li>所需的代表类型</li>
+<li>可用的资源，如时间和预算</li>
+</ul>
+<p>调查将在COVID-19环境下进行。这意味着需要尽快得到研究结果，而你将不会有太多的时间来招募受访者，考虑到这一点，可以利用现有的客户网络和数据库<br>招募受访者也有其他选择。请记住这些招募方法中的每一种都会以不同的方式影响最终的受访者样本。</p>
+<h3 id="数据采集员"><a href="#数据采集员" class="headerlink" title="数据采集员"></a>数据采集员</h3><p>调查的成功与否，很大程度上取决于数据收集者的能力和技能组合。<br><strong>数据收集者应该具备什么样的条件？</strong></p>
+<ul>
+<li>有过一般数据收集的经验 </li>
+<li>对当地情况的了解 </li>
+<li>有足够的时间进行调查 </li>
+<li>当地语言的熟练程度 </li>
+<li>强大的采访技巧</li>
+</ul>
+<h4 id="培训数据收集员"><a href="#培训数据收集员" class="headerlink" title="培训数据收集员"></a>培训数据收集员</h4><ul>
+<li><p>如果需要，关于具体数据收集技术的培训（如电话调查）</p>
+</li>
+<li><p>关于他们将使用的应用程序或平台的培训（包括故障排除）</p>
+</li>
+<li><p>实践场景 （例如如何保护自己免受COVID-19影响的培训）</p>
+</li>
+</ul>
+<p>在对数据收集者的培训课程中，确保在实地工作之前对数字版的调查问卷（最好是在线和离线版本）进行测试，以发现任何问题。</p>
+<h4 id="数据采集器的数量"><a href="#数据采集器的数量" class="headerlink" title="数据采集器的数量"></a>数据采集器的数量</h4><ul>
+<li>样本量是多少？</li>
+<li>有多少天可以用来收集数据？</li>
+<li>平均而言，采访者在一天内可以进行多少次采访？</li>
+</ul>
+<h4 id="进行定量调查"><a href="#进行定量调查" class="headerlink" title="进行定量调查"></a>进行定量调查</h4><p>定量调查一旦开始，就需要每天进行监测，以追踪达到的受访者数量与设定的配额。<br>项目组应通过调查软件或访谈记录来监测正在提交的数据。</p>
+<p>为了避免重大问题或延误，请考虑:</p>
+<ul>
+<li>确保调查员清楚地知道他们每天的配额</li>
+<li>与调查员保持沟通，以便在出现问题时及时解决。</li>
+<li>制定收集数据采集员反馈意见的规范，以了解他们对实地经验的看法。</li>
+</ul>
+<h4 id="量化调查"><a href="#量化调查" class="headerlink" title="量化调查"></a>量化调查</h4><p>（确保数据收集者和受访者的健康和安全得到保护，并遵守所有当地的保护措施，以及世卫组织可能建议的任何额外措施）</p>
+<p>一旦完成了定量研究并对数据进行了分析，该工具的定性部分就开始了。<br>进行定性调查的目的是为了收集与当地应对小组高度相关的主题的进一步信息。定量研究告诉我们正在发生什么以及为什么会发生。<br>研究必须是透明和可复制的。<br>研究者不得阻挠或掩盖研究。<br>研究必须正确捕捉参与者的经验。</p>
+<p>规划定性调查 在开始定性研究时，有三个主要决定要做。</p>
+<ul>
+<li><p>我们要研究什么主题？</p>
+</li>
+<li><p>我们要使用哪些数据收集方法？</p>
+<ul>
+<li>项目组需要决定是使用访谈、焦点小组，还是其他方法。</li>
+</ul>
+</li>
+<li><p>我们应该与谁交谈？</p>
+<ul>
+<li>样本需要被定义、确定和招募。</li>
+</ul>
+</li>
+</ul>
+<h5 id="确认课题"><a href="#确认课题" class="headerlink" title="确认课题"></a>确认课题</h5><p>定性研究的课题应根据当地应对小组的需求和反馈，结合定量数据的临时调查结果来确定。<br>在选择课题时，应提出以下问题：</p>
+<ul>
+<li><p>数据中是否有任何异常值，突出了需要进一步调查的领域？</p>
+</li>
+<li><p>响应团队目前或即将面临的问题是什么？</p>
+</li>
+<li><p>是否有当地应对团队特别感兴趣的部分？</p>
+</li>
+</ul>
+<h5 id="确认数据收集方法"><a href="#确认数据收集方法" class="headerlink" title="确认数据收集方法"></a>确认数据收集方法</h5><p>有几种不同的方法来收集定性数据，包括焦点小组、深入访谈、关键有关部门访谈和研讨会会议。在选择数据收集的方法时，要考虑所调查的主题、时间和预算。</p>
+<p>一旦确定了数据收集的方法，你就得研究确定受访者的问题：</p>
+<p>第一个任务是选择参与者——目的性抽样经常被用来有意地选择最适合研究目标的人。</p>
+<p>要记住的一点，当我们进入实地调查阶段的尾声时，采访者的印象和看法也是知识和见解的宝贵来源，可以纳入对调查结果的分析和解释中。</p>
+<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><ul>
+<li>SBI工具是一个反复的、灵活的框架，可以根据当地的需要和情况进行调整。<br>在确定定量调查的样本时，确保其具有代表性。利用现有的网络和数据库来招募受访者。</li>
+<li>挑选数据收集者的依据应该是 <ul>
+<li>有关经验</li>
+<li>当地语言技能</li>
+<li>了解当地情况</li>
+</ul>
+</li>
+<li>数据收集员的数量将取决于样本量、可用的时间以及他们在一天内能完成的采访数量。每天的监测对于确保团队达到所设定的配额至关重要。</li>
+<li>项目组和数据收集者之间的公开沟通渠道有助于解决可能出现的任何问题。</li>
+<li>收集数据时的挑战是不可避免的。</li>
+<li>进行定性研究是为了就当地应对小组认为重要的主题收集深入信息。</li>
+</ul>
+<h1 id="分析、报告、传播"><a href="#分析、报告、传播" class="headerlink" title="分析、报告、传播"></a>分析、报告、传播</h1><p>分析使我们能够将大量的数据转化为对当地反应团队有意义和可操作的结果。</p>
+<p><strong>谁来进行分析？</strong><br>数据分析通常由项目组负责，或者由执行伙伴负责，但无论由谁来进行，这两个小组都需要参与这项活动，以确保结果符合应对小组的需要。</p>
+<p>分析和传播大致可以分为四个步骤：</p>
+<ol>
+<li>制定分析计划 </li>
+<li>进行定量数据分析 </li>
+<li>进行定性的数据分析 </li>
+<li>报告和传播研究结果</li>
+</ol>
+<p>虽然这些阶段是按顺序列出的，但在现实中，其中一些阶段会重叠在一起。</p>
+<h2 id="分析计划"><a href="#分析计划" class="headerlink" title="分析计划"></a>分析计划</h2><p>分析阶段从制定分析计划开始。分析计划的目的是对所收集的数据进行分析。</p>
+<p>拥有一个分析计划有助于</p>
+<ul>
+<li><p>有效地进行数据分析</p>
+</li>
+<li><p>确定分析和交流的优先次序</p>
+</li>
+<li><p>将分析的重点放在当地反应小组的需求上 团队</p>
+</li>
+</ul>
+<p>分析计划应包含以下内容。</p>
+<ol>
+<li>调查的关键问题或主题的概要</li>
+<li>对要使用的统计分析技术的广泛描述。</li>
+</ol>
+<p> 重要的是，分析计划要符合当地应对小组的需求。了解应对小组希望通过数据解决的优先事项、知识差距、问题和假设至关重要。</p>
+<p>了解这些优先事项是一个反复的过程，因为它们可能会随着当地环境的变化而改变。因此，分析计划需要有一定的灵活性。</p>
+<h2 id="定量数据分析"><a href="#定量数据分析" class="headerlink" title="定量数据分析"></a>定量数据分析</h2><p>定量数据分析应在问卷调查结束后不久开始。<br>分析应在分析计划的指导下进行，并使用微软Excel或类似的统计软件。</p>
+<p>编码在分析中的作用是为了使分析更容易，使用编码对数据进行分类。<br>编码是为所收集的答复分配数值（如数字）的过程。为每个答案指定一个代码的目的是为了使数据更容易被处理和分析。<br>除了分配代码外，考虑在分析中如何处理问卷中使用的代码也很重要。</p>
+<h2 id="分析方法"><a href="#分析方法" class="headerlink" title="分析方法"></a>分析方法</h2><p>分析数据时使用的两种常用统计技术是交叉分析和回归分析。</p>
+<h3 id="交叉分析"><a href="#交叉分析" class="headerlink" title="交叉分析"></a>交叉分析</h3><p>交叉分析是一种统计技术，是理解数据的第一步，很有帮助。它是一种建立多个变量之间关系的方法（很像Excel中的透视表）。<br>交叉表 “对数据进行分类，以便按部分或子组进行分析，而不是将整个组作为一个整体。它们可以用来回答当地应对小组提出的具体问题。<br>分组可以基于年龄等人口因素，或对政府的信任等态度因素。<br>下面是两个例子：<br>例子1-人口统计学细分<br>由当地应对小组提出的问题：老年人是否比中年人更有可能遵循COVID-19的保护措施？<br>子群体：老年人（55岁以上）和中年人（35-54岁）<br>测量：采取保护性措施，如戴口罩<br>例子2-纵向细分<br>由当地应对小组提出的问题：强烈反对接种COVID-19疫苗的人是否也较少采取保护措施？<br>子群体：报告说他们 “肯定不会接种疫苗 “的人<br>措施：采取保护性措施，如戴口罩。</p>
+<h2 id="了解调查结果"><a href="#了解调查结果" class="headerlink" title="了解调查结果"></a>了解调查结果</h2><p>随着分析的进行，应该开始对最相关的发现进行评估和优先排序的过程：</p>
+<ul>
+<li>数据讲述了人们对这一流行病的经历的什么故事？</li>
+<li>分析是否解决了当地反应小组的问题和需要？</li>
+<li>这些数据是否可以用来为应对措施提供具体信息？</li>
+<li>应对团队如何利用这些见解来设计干预措施？</li>
+</ul>
+<p>应该以及时和可获得的方式将调查结果报告给当地应对小组。</p>
+<p>所有调查结果都应针对目标受众，并解决他们提出的具体需求或问题。</p>
+<p>在定量分析之后，如果需要关于某个主题的更多信息，可以通过定性研究来跟进。</p>
+<p>进一步的定性研究可以帮助解释某些行为和态度背后的原因，特别是 “如何 “和 “为什么”：</p>
+<ul>
+<li>这种行为是什么？</li>
+<li>谁在做这种行为？</li>
+<li>何时发生？</li>
+<li>在哪里发生？</li>
+</ul>
+<p>看看已经收集的定量数据：</p>
+<ul>
+<li>它是如何发生的？</li>
+<li>为什么会发生？</li>
+</ul>
+<h3 id="分析定性数据"><a href="#分析定性数据" class="headerlink" title="分析定性数据"></a>分析定性数据</h3><p>正如我们在第三部分中所将到的，有几种不同的方法来获取定性数据，如访谈或研讨会。正因为如此，所收集的数据的类型和数量都会不同。这意味着数据分析的方法也会相应地不同。<br>确定关键主题<br>定性分析从确定数据中产生的主要主题开始。这些主题被用来作为进一步分析的基础。<br>有几种方法来确定定性数据中的关键主题。<br>进行采访的人<br>执行伙伴<br>项目组<br>在这之后，可以进行归纳式主题编码（按主题组织陈述）。<br>—根据数据量的大小，可以使用微软Excel中的模板手动进行编码，或者使用编码软件。<br>定性分析的进行将取决于：</p>
+<ul>
+<li><p>数据的类型</p>
+</li>
+<li><p>数据的数量</p>
+</li>
+<li><p>可用的时间和资源</p>
+</li>
+<li><p>如何使用这些数据</p>
+</li>
+</ul>
+<p>团队工作 ：依靠在进行定性研究和分析数据方面有经验的团队成员，以确定在你的情况下要遵循的具体方法。</p>
+<p>报告数据<br>在分析的最后，是报告和传播调查结果。<br>在报告数据时，要考虑接受信息的受众。</p>
+<ul>
+<li>谁是受众？</li>
+<li>他们需要知道什么？</li>
+<li>他们可以利用这些见解采取什么具体行动或决定？</li>
+</ul>
+<p>有很多方法来报告研究结果–例如，编写一份总结定性和定量分析结果的单一报告，或者按主题编写一系列较短的报告。</p>
+<p>需要考虑的要点<br>如果在分享数据的过程中出现了新的研究问题，会怎样？<br>分享数据和寻求响应团队的反馈的过程是反复进行的。随着见解的提出，可能会出现新的问题，可能有必要回到原始数据或计划进行额外的研究。<br>如果在分析过程中发现了没有预料到的额外信息，会怎样？<br>进行分析将有助于回答答辩小组提出的问题，并就目标议题提供更多信息。但是，它也可能揭示出可能没有考虑到或预期到的新见解。两种类型的发现都很有价值。</p>
+<p>报告数据的方式<br>一份结构良好的报告应该简明扼要、易于阅读，并提出与应对小组的需求相关的调查结果。如果有帮助的话，可以将定量分析和定性分析的结果整合起来，并围绕感兴趣的关键话题进行组织。</p>
+<p>例子<br>尼日利亚和赞比亚的分析结构采用了以下标题：</p>
+<ol>
+<li>执行摘要 </li>
+<li>大流行病的影响 </li>
+<li>知识 </li>
+<li>信念、态度和错误观念 </li>
+<li>行动的行为、障碍和促进因素 </li>
+<li>个人经验 </li>
+<li>准备情况和自我效能 </li>
+<li>选定的核心模块的研究结果</li>
+</ol>
+<p>何时分享调查结果<br>在数据收集后不久就传播数据，为应对团队创造最大的价值。<br>例子<br>在赞比亚和尼日利亚，在数据收集结束一周后，与响应团队分享了简短的临时报告，以获得初步反馈和信息。这些报告总结了到报告时为止的主要发现。<br>这使各小组能够迅速开始在其现有工作中使用这些数据。<br>一段时间后，我们将分享一份更加完善和详细的最终报告</p>
+<p>传播<br>在计划传播调查结果的方式时，必须考虑到所有有关部门（包括受访者）。<br>对受访者的反馈可以通过各种渠道分享，包括直接宣传、与当地卫生部门或领导分享材料，或通过社会媒体&#x2F;网站等公共媒体渠道。</p>
+<h2 id="总结-1"><a href="#总结-1" class="headerlink" title="总结"></a>总结</h2><ul>
+<li>数据分析阶段是一个反复的过程：<ul>
+<li>它必须考虑到实地发生的任何变化，以及它如何影响应对团队。</li>
+</ul>
+</li>
+<li>分析计划概述了应如何分析所收集的数据。</li>
+<li>定量数据分析有助于：<ul>
+<li>大致确定问题</li>
+<li>确定关联性 </li>
+<li>回答当地应对小组提出的具体问题</li>
+</ul>
+</li>
+<li>定性数据分析阶段：<ul>
+<li>提供关于一个主题的更详细的信息</li>
+<li>对 “如何 “和 “为什么 “发生的事情进行阐述</li>
+</ul>
+</li>
+<li>定性数据分析的定义是：<ul>
+<li>数据的类型 </li>
+<li>其格式和数量</li>
+<li>时间和预算</li>
+</ul>
+</li>
+<li>在创建报告时，必须考虑到受众：他们是谁，他们需要知道什么？</li>
+<li>调查结果应该是可操作的，并与具体的 “行动 “相联系，而不是 “有趣”。在传播和汇报调查结果时，必须考虑所有有关部门（包括受访者）。</li>
+</ul>
+<h1 id="将数据变成行动"><a href="#将数据变成行动" class="headerlink" title="将数据变成行动"></a>将数据变成行动</h1><p>设计干预措施的步骤 ：</p>
+<ul>
+<li>确定问题</li>
+<li>澄清行为以及相关的障碍和驱动因素</li>
+<li>设计一个针对具体障碍的试点或原型干预措施</li>
+<li>测试替代性方法或解决方案</li>
+<li>完善干预措施</li>
+<li>筹备规模</li>
+</ul>
+<h2 id="界定问题"><a href="#界定问题" class="headerlink" title="界定问题"></a>界定问题</h2><p>界定干预措施，首先要确定需要解决的问题。重要的是确定一个关键问题的优先次序，并解决一个具体的行为。然后，这种行为将成为干预措施的目标。<br>想象一下，一个国家使用SBI工具收集了大众对COVID-19情况。这些见解是关于各种与大流行病有关的问题，从获得医疗保健到采取保护措施。<br>收集到的信息显示，在某一省份有大量的人报告说对COVID-19疫苗感到不确定。这种不确定的程度很高，应对小组决定在未来几个月内通过行为干预优先解决这一问题。</p>
+<h3 id="分析行为"><a href="#分析行为" class="headerlink" title="分析行为"></a>分析行为</h3><p>在具体的行为被分离出来后，尽可能清楚地定义它是有用的。从SBI工具中得到的启示可以构成这一工作的出发点。考虑提出以下问题：</p>
+<ul>
+<li>这种行为是什么？</li>
+<li>谁在做这种行为？</li>
+<li>何时发生？</li>
+<li>在哪里发生？</li>
+</ul>
+<p>看看已经收集到的定量数据</p>
+<ul>
+<li>它是如何发生的？</li>
+<li>为什么会发生？</li>
+</ul>
+<h4 id="障碍和驱动因素"><a href="#障碍和驱动因素" class="headerlink" title="障碍和驱动因素"></a>障碍和驱动因素</h4><p>行为是复杂的，影响它们的因素可能有很多。所以了解这些因素清楚地有助于解决目标行为背后的问题尤为重要。<br>有几个工具和框架可以帮助你思考和组织行为的障碍和驱动因素。COM-B模型（Michie, van Stralen and West, 2011）是经常使用的一种。</p>
+<p>根据COM-B模型，可以影响行为的因素可以分为：</p>
+<ul>
+<li>能力：心理（知识）或身体（技能）因素 </li>
+<li>机会：社会（社会影响）或物理 (环境资源)因素 </li>
+<li>动机：自动动机（情绪）或反思性动机（信念和意图）。</li>
+</ul>
+<p>我们继续进行我们的案例研究，希望在一个特定的省份提高COVID-19疫苗的吸收率。COM-B模型如何帮助我们识别这种情况下的障碍？我们首先要了解能力类别下的障碍。</p>
+<p>接下来，我们在 “机会 “类别下看一下接种疫苗的障碍。</p>
+<table>
+<thead>
+<tr>
+<th>-</th>
+<th>障碍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>实际机会</td>
+<td>-疫苗诊所不容易到达;等待时间长;疫苗库存有限;难以请假</td>
+</tr>
+<tr>
+<td>社会机会</td>
+<td>社区领导人的信息来源是朋友和同事，而不是参考有信誉的来源的最新信息。</td>
+</tr>
+</tbody></table>
+<p>最后，我们看一下动机类别下的障碍：</p>
+<table>
+<thead>
+<tr>
+<th>-</th>
+<th>障碍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>反思性动机</td>
+<td>认为疫苗不会起作用，因为人们在注射后仍需戴上口罩</td>
+</tr>
+<tr>
+<td>自动动机</td>
+<td>害怕注射时的疼痛</td>
+</tr>
+</tbody></table>
+<p>一旦完成了行为分析，下一步就是开始设计干预措施。<br>我们可以确保所提供的信息</p>
+<ul>
+<li>易于理解</li>
+<li>以一种有吸引力的形式提供</li>
+<li>每周及时提供。</li>
+<li>提供实际的例子，说明遵守规则在社会上是可以接受的</li>
+</ul>
+<p>因此，与其让领导人阅读冗长和过于复杂的文章，不如将信息写得清楚，并达到非科学家也能理解的水平。</p>
+<h5 id="审批标准："><a href="#审批标准：" class="headerlink" title="审批标准："></a>审批标准：</h5><p>让我们使用APEASE标准来评估我们案例研究中的拟议干预措施–每周向宗教和社区领袖提供关于COVID-19大流行病的最新信息。</p>
+<p>可负担性：当以预定规模交付时，它的可负担性如何？</p>
+<p>实用：它能否在预定的环境中大规模实施（考虑到物质和人力资源）？</p>
+<p>有效：干预措施在实现政策目标方面的效果如何？</p>
+<p>可接受的：关键有关部门是否可以接受？</p>
+<p>副作用：导致意外的不良或有益结果的可能性有多大？</p>
+<p>公平：它是否会增加或减少社会中处于有利地位和不利地位的部门之间的差异？</p>
+<h5 id="评估："><a href="#评估：" class="headerlink" title="评估："></a>评估：</h5><p>从实施者的角度来看：卫生部工作人员每周与宗教和社区领袖接触的一些间接成本（尽管成本可能不高）。<br>从目标受众的角度看：对领导人来说，没有预期的成本</p>
+<p>从实施者的角度来看：干预措施的实用性需要在测试阶段进行评估。传递信息的方式可能会影响到解决方案在大规模推广时的实用性。虽然发送电子邮件对当地卫生官员来说很容易，也很实用，但在农村地区不可靠的互联网接入可能会使电子邮件失效，需要更多的人力资源来传递信息。<br>从目标受众的角度来看：评估干预措施的实用性，需要在测试阶段进行考察。</p>
+<p>从实施者的角度来看：效果需要在测试阶段进行评估。然而，类似的干预措施在一个邻国进行了测试和推广，并显示出其有效性。<br>从目标受众的角度看：有效性需要在测试阶段进行评估。应咨询领导人以及他们的选民，以评估变化。</p>
+<p>从实施者和目标受众的角度出发：必须注意确保一些宗教和社区团体不被故意排除在外。</p>
+<h5 id="实施设计"><a href="#实施设计" class="headerlink" title="实施设计"></a>实施设计</h5><p>我们来到了干预设计过程的最后阶段，也就是测试、完善和扩大规模。只有通过测试，我们才能真正了解干预措施在当地的实际效果。<br>测试一项干预措施的目的是：</p>
+<ul>
+<li>评估它是否有效</li>
+<li>看看是否有任何问题或意外的后果 </li>
+<li>看看在更广泛地推广之前是否可以作出任何改进或调整</li>
+</ul>
+<p>原型设计和试验<br>测试可以通过多种方式进行，但通常涉及以下两种方法：</p>
+<ul>
+<li>开发一个原型：创建一个初步的或第一个版本的解决方案 </li>
+<li>试运行：在小范围内测试程序或干预措施（例如，在一家医院，而不是所有医院）。</li>
+</ul>
+<p>原型设计和试点。<br>在我们每周向宗教和社区领袖传播信息的例子中，有许多方法可以测试这个想法。<br>原型的例子：以各种形式（如Word文档&#x2F;传单&#x2F;文字信息）与少数当地领导人分享信息表草案，以获得他们的反馈。<br>试点的例子：每周与几位领导人进行一次编写和分享信息的练习，并在他们与社区的日常互动中使用这些信息一个月后获得他们的反馈。<br>此外，还应该征求会众和社区成员的反馈意见。</p>
+<h5 id="试运行和原型设计"><a href="#试运行和原型设计" class="headerlink" title="试运行和原型设计"></a>试运行和原型设计</h5><p>一旦原型设计和试点工作完成，重要的是要花一些时间来审查结果，并做出任何必要的改变。在某些情况下，在干预措施推广之前，需要进一步的测试。</p>
+<h2 id="总结-2"><a href="#总结-2" class="headerlink" title="总结"></a>总结</h2><p>用SBI工具采集数据只是开发行为干预的初始阶段。最重要的部分是利用数据来设计干预措施。<br>为了设计干预措施，我们可以将数据的洞察力与关于人们如何做决定的行为研究文献结合起来。<br>干预措施可以采取任何形式：它们可以是具体的行动、整个战略、沟通活动或进一步的研究。<br>在设计的同时，我们应该考虑认知、心理、社会、文化和环境因素，这些因素会影响行为，正如COM-B模型中强调的那样。</p>
+<p>我们需要确定一种行为的障碍和驱动因素。目标是消除现有的障碍并利用驱动因素来改变行为。<br>目前有多种工具和框架，可用于设计行为干预措施。<br>设计干预措施需要时间、人力资源和一定数量的资金。<br>一旦设计好干预措施，在扩大规模之前，必须对其进行测试和完善，以提高其效力。</p>
+<h1 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h1><p>记住，收集社会和行为数据是第一步。<br>随后需要的是将数据转化为行动的意愿，通过设计有行为依据的倡议，推动个人、社区和最终国家的行为变化。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://kemodowski.fun">科莫多夫斯基</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://kemodowski.fun/2022/10/27/SocialNet%20Social%20and%20behavioural%20insights%20COVID-19%20data%20collection%20tool/">https://kemodowski.fun/2022/10/27/SocialNet%20Social%20and%20behavioural%20insights%20COVID-19%20data%20collection%20tool/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://kemodowski.fun" target="_blank">科莫多夫斯基</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%BB%9F%E8%AE%A1/">统计</a></div><div class="post_share"><div class="social-share" data-image="https://s2.loli.net/2022/10/27/rdN48g5DUtE6wSW.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2022/10/26/%E6%96%87%E6%91%98/"><img class="next-cover" src="https://s2.loli.net/2022/10/26/ajJWqy6pM5FAwNu.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">摘抄</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Valine</span><span class="switch-btn"></span><span class="second-comment">Livere</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div><div><div id="lv-container" data-id="city" data-uid="MTAyMC81NzUwMi8zMzk2Ng=="></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://s2.loli.net/2022/10/25/nGU1KtAw9a4S2Bx.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">科莫多夫斯基</div><div class="author-info__description">Valkyrie system 启动</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://space.bilibili.com/266924148?spm_id_from=333.1007.0.0"><i class="fa-brands fa-bilibili"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Kemodowski" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:1393983958@qq.com" target="_blank" title="邮箱"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://weibo.com/6346617878/profile?rightmod=1&amp;wvr=6&amp;mod=personinfo" target="_blank" title="微博"><i class="fa-brands fa-weibo"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BA%8F"><span class="toc-number">1.</span> <span class="toc-text">序</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AD%B9%E5%A4%87%E9%98%B6%E6%AE%B5"><span class="toc-number">2.</span> <span class="toc-text">筹备阶段</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%BA%E5%91%98"><span class="toc-number">2.1.</span> <span class="toc-text">人员</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E5%B0%8F%E7%BB%84"><span class="toc-number">2.1.1.</span> <span class="toc-text">项目小组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%93%8D%E5%BA%94%E5%9B%A2%E9%98%9F%E5%92%8C%E5%BD%93%E5%9C%B0%E7%9A%84%E6%9C%89%E5%85%B3%E9%83%A8%E9%97%A8"><span class="toc-number">2.1.2.</span> <span class="toc-text">响应团队和当地的有关部门</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B2%9F%E9%80%9A%EF%BC%88%E5%85%B3%E9%94%AE%EF%BC%89"><span class="toc-number">2.1.2.1.</span> <span class="toc-text">沟通（关键）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AF%B9%E7%8E%B0%E6%9C%89%E6%95%B0%E6%8D%AE%E7%9A%84%E8%AF%84%E4%BC%B0"><span class="toc-number">2.1.2.2.</span> <span class="toc-text">对现有数据的评估</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A2%84%E6%A3%80%E7%9A%84%E6%96%B9%E5%BC%8F"><span class="toc-number">2.1.2.3.</span> <span class="toc-text">预检的方式</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E6%96%BD%E4%BC%99%E4%BC%B4"><span class="toc-number">2.2.</span> <span class="toc-text">实施伙伴</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%AD%E5%A2%83%E5%8C%96"><span class="toc-number">2.2.1.</span> <span class="toc-text">语境化</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%AD%E8%A8%80%E5%92%8C%E7%BF%BB%E8%AF%91"><span class="toc-number">2.2.1.1.</span> <span class="toc-text">语言和翻译</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%A2%E9%98%9F%E5%8F%82%E4%B8%8E%E7%AD%96%E7%95%A5"><span class="toc-number">2.2.2.</span> <span class="toc-text">团队参与策略</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%89%E5%85%B3%E9%83%A8%E9%97%A8%E7%AE%A1%E7%90%86%E7%9A%84%E5%A5%BD%E5%A4%84"><span class="toc-number">2.2.2.1.</span> <span class="toc-text">有关部门管理的好处</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BC%A6%E7%90%86%E6%89%B9%E5%87%86"><span class="toc-number">2.2.2.2.</span> <span class="toc-text">伦理批准</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7"><span class="toc-number">2.2.2.3.</span> <span class="toc-text">调查问卷</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">2.3.</span> <span class="toc-text">总结</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E5%92%8C%E5%BC%80%E5%B1%95%E5%AE%9E%E5%9C%B0%E8%B0%83%E6%9F%A5"><span class="toc-number">3.</span> <span class="toc-text">准备和开展实地调查</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%BD%E6%A0%B7%E7%AD%96%E7%95%A5"><span class="toc-number">3.1.</span> <span class="toc-text">抽样策略</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%B7%E6%9C%AC"><span class="toc-number">3.1.1.</span> <span class="toc-text">样本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E5%91%98"><span class="toc-number">3.1.2.</span> <span class="toc-text">数据采集员</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%B9%E8%AE%AD%E6%95%B0%E6%8D%AE%E6%94%B6%E9%9B%86%E5%91%98"><span class="toc-number">3.1.2.1.</span> <span class="toc-text">培训数据收集员</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E5%99%A8%E7%9A%84%E6%95%B0%E9%87%8F"><span class="toc-number">3.1.2.2.</span> <span class="toc-text">数据采集器的数量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%9B%E8%A1%8C%E5%AE%9A%E9%87%8F%E8%B0%83%E6%9F%A5"><span class="toc-number">3.1.2.3.</span> <span class="toc-text">进行定量调查</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%87%8F%E5%8C%96%E8%B0%83%E6%9F%A5"><span class="toc-number">3.1.2.4.</span> <span class="toc-text">量化调查</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%A1%AE%E8%AE%A4%E8%AF%BE%E9%A2%98"><span class="toc-number">3.1.2.4.1.</span> <span class="toc-text">确认课题</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%A1%AE%E8%AE%A4%E6%95%B0%E6%8D%AE%E6%94%B6%E9%9B%86%E6%96%B9%E6%B3%95"><span class="toc-number">3.1.2.4.2.</span> <span class="toc-text">确认数据收集方法</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E8%AE%BA"><span class="toc-number">3.2.</span> <span class="toc-text">结论</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%86%E6%9E%90%E3%80%81%E6%8A%A5%E5%91%8A%E3%80%81%E4%BC%A0%E6%92%AD"><span class="toc-number">4.</span> <span class="toc-text">分析、报告、传播</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E6%9E%90%E8%AE%A1%E5%88%92"><span class="toc-number">4.1.</span> <span class="toc-text">分析计划</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9A%E9%87%8F%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90"><span class="toc-number">4.2.</span> <span class="toc-text">定量数据分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95"><span class="toc-number">4.3.</span> <span class="toc-text">分析方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%A4%E5%8F%89%E5%88%86%E6%9E%90"><span class="toc-number">4.3.1.</span> <span class="toc-text">交叉分析</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%86%E8%A7%A3%E8%B0%83%E6%9F%A5%E7%BB%93%E6%9E%9C"><span class="toc-number">4.4.</span> <span class="toc-text">了解调查结果</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%9E%90%E5%AE%9A%E6%80%A7%E6%95%B0%E6%8D%AE"><span class="toc-number">4.4.1.</span> <span class="toc-text">分析定性数据</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93-1"><span class="toc-number">4.5.</span> <span class="toc-text">总结</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B0%86%E6%95%B0%E6%8D%AE%E5%8F%98%E6%88%90%E8%A1%8C%E5%8A%A8"><span class="toc-number">5.</span> <span class="toc-text">将数据变成行动</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%95%8C%E5%AE%9A%E9%97%AE%E9%A2%98"><span class="toc-number">5.1.</span> <span class="toc-text">界定问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%9E%90%E8%A1%8C%E4%B8%BA"><span class="toc-number">5.1.1.</span> <span class="toc-text">分析行为</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%9A%9C%E7%A2%8D%E5%92%8C%E9%A9%B1%E5%8A%A8%E5%9B%A0%E7%B4%A0"><span class="toc-number">5.1.1.1.</span> <span class="toc-text">障碍和驱动因素</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%A1%E6%89%B9%E6%A0%87%E5%87%86%EF%BC%9A"><span class="toc-number">5.1.1.1.1.</span> <span class="toc-text">审批标准：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%AF%84%E4%BC%B0%EF%BC%9A"><span class="toc-number">5.1.1.1.2.</span> <span class="toc-text">评估：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%9E%E6%96%BD%E8%AE%BE%E8%AE%A1"><span class="toc-number">5.1.1.1.3.</span> <span class="toc-text">实施设计</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%AF%95%E8%BF%90%E8%A1%8C%E5%92%8C%E5%8E%9F%E5%9E%8B%E8%AE%BE%E8%AE%A1"><span class="toc-number">5.1.1.1.4.</span> <span class="toc-text">试运行和原型设计</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93-2"><span class="toc-number">5.2.</span> <span class="toc-text">总结</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%93%E6%9D%9F%E8%AF%AD"><span class="toc-number">6.</span> <span class="toc-text">结束语</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/10/27/SocialNet%20Social%20and%20behavioural%20insights%20COVID-19%20data%20collection%20tool/" title="洞察数据收集工具——以新冠肺炎下社会行为为例"><img src="https://s2.loli.net/2022/10/27/rdN48g5DUtE6wSW.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="洞察数据收集工具——以新冠肺炎下社会行为为例"/></a><div class="content"><a class="title" href="/2022/10/27/SocialNet%20Social%20and%20behavioural%20insights%20COVID-19%20data%20collection%20tool/" title="洞察数据收集工具——以新冠肺炎下社会行为为例">洞察数据收集工具——以新冠肺炎下社会行为为例</a><time datetime="2022-10-27T05:29:08.000Z" title="发表于 2022-10-27 13:29:08">2022-10-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/26/%E6%96%87%E6%91%98/" title="摘抄"><img src="https://s2.loli.net/2022/10/26/ajJWqy6pM5FAwNu.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="摘抄"/></a><div class="content"><a class="title" href="/2022/10/26/%E6%96%87%E6%91%98/" title="摘抄">摘抄</a><time datetime="2022-10-26T00:39:41.000Z" title="发表于 2022-10-26 08:39:41">2022-10-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/23/%E8%AF%BB%E4%B9%A6%E4%BA%BA%E7%9A%84%E4%BA%8B%E6%80%8E%E4%B9%88%E8%83%BD%E5%8F%AB%E5%81%B7%EF%BC%9F/" title="摘抄"><img src="https://s2.loli.net/2022/10/25/zvHpgSfbtDOmQ7B.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="摘抄"/></a><div class="content"><a class="title" href="/2022/10/23/%E8%AF%BB%E4%B9%A6%E4%BA%BA%E7%9A%84%E4%BA%8B%E6%80%8E%E4%B9%88%E8%83%BD%E5%8F%AB%E5%81%B7%EF%BC%9F/" title="摘抄">摘抄</a><time datetime="2022-10-22T23:55:33.000Z" title="发表于 2022-10-23 07:55:33">2022-10-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2019/12/31/%E5%A6%99%E5%85%88%E7%94%9F/" title="妙先生 | 影评"><img src="https://s2.loli.net/2022/10/25/m3UCOhopsLQDKi9.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="妙先生 | 影评"/></a><div class="content"><a class="title" href="/2019/12/31/%E5%A6%99%E5%85%88%E7%94%9F/" title="妙先生 | 影评">妙先生 | 影评</a><time datetime="2019-12-31T11:08:00.000Z" title="发表于 2019-12-31 19:08:00">2019-12-31</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://s2.loli.net/2022/10/27/rdN48g5DUtE6wSW.png')"><div id="footer-wrap"><div class="copyright">&copy;2022 By 科莫多夫斯基</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><a href="https://icp.gov.moe/?keyword=20222551" target="_blank">萌ICP备20222551号</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'yX3S4fJ8iYCs224XUn1NnMVH-MdYXbMMI',
+      appKey: 'dOGsR4WatVBWbohKSqNyzITb',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script><script>function loadLivere () {
+  if (typeof LivereTower === 'object') {
+    window.LivereTower.init()
+  }
+  else {
+    (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  }
+}
+
+if ('Valine' === 'Livere' || !false) {
+  if (false) btf.loadComment(document.getElementById('lv-container'), loadLivere)
+  else loadLivere()
+}
+else {
+  function loadOtherComment () {
+    loadLivere()
+  }
+}</script></div><div class="aplayer no-destroy" data-id="7707255204" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div><script>((window.gitter = {}).chat = {}).options = {
+  disableDefaultChat: true,
+};
+document.addEventListener('gitter-sidecar-ready', (e) => {
+  const GitterChat = e.detail.Chat
+  let chat
+
+  function initGitter () {
+    chat = new GitterChat({
+      room: 'Kemodowski/community',
+      activationElement: '#chat_btn'
+    });
+  }
+
+  initGitter()
+
+  if (true) {
+    document.addEventListener('pjax:complete', () => {
+      chat.destroy()
+      initGitter()
+    })
+  }
+
+})</script><script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async="async" defer="defer"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
